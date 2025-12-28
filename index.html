@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Luxury Salon & Wellness - Premium grooming services for weddings, corporate events, and everyday elegance">
+    <title>Luxury Salon & Wellness | Book Your Appointment</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!--
+    ============================================
+    CUSTOMIZATION INSTRUCTIONS
+    ============================================
+    
+    HOW TO CHANGE BUSINESS NAME:
+    - Search for "Luxury Salon & Wellness" and replace with your business name
+    - Update in: <title> tag, header logo, hero section, footer
+    
+    HOW TO CHANGE PHONE NUMBER:
+    - Search for "+91 98765 43210" and replace with your phone number
+    - Update in: hero section, contact section, floating call button
+    
+    HOW TO CHANGE WHATSAPP NUMBER:
+    - Search for "919876543210" (without + or spaces) and replace with your WhatsApp number
+    - Update in: hero section, contact section, floating WhatsApp button
+    
+    HOW TO UPDATE SERVICE PRICES:
+    - Find the services section below (around line 120)
+    - Look for price text like "₹2,999+" and update as needed
+    
+    HOW TO MODIFY SERVICES:
+    - Find the services section with class "services-grid"
+    - Add/remove service cards as needed
+    - Update icons using Font Awesome class names (e.g., fa-face-smile, fa-briefcase)
+    
+    ============================================
+    -->
+    
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-spa"></i>
+                <span>Luxury Salon & Wellness</span>
+            </div>
+            <nav class="nav">
+                <a href="#home">Home</a>
+                <a href="#services">Services</a>
+                <a href="#booking">Book Now</a>
+                <a href="#testimonials">Reviews</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content" data-aos="fade-up">
+                <h1 class="hero-title">Luxury Salon & Wellness</h1>
+                <p class="hero-tagline">Luxury Grooming for Every Occasion</p>
+                <p class="hero-description">Experience the perfect blend of tradition and modern elegance. Where beauty meets wellness.</p>
+                <div class="hero-buttons">
+                    <a href="#booking" class="btn btn-primary">Book Now</a>
+                    <a href="https://wa.me/919876543210?text=Hi!%20I%20would%20like%20to%20book%20an%20appointment" class="btn btn-secondary" target="_blank">
+                        <i class="fab fa-whatsapp"></i> WhatsApp Us
+                    </a>
+                    <a href="tel:+919876543210" class="btn btn-outline">
+                        <i class="fas fa-phone"></i> Call Now
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Our Premium Services</h2>
+                <p class="section-subtitle">Indulge in luxury grooming experiences tailored for every occasion</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i class="fas fa-face-smile"></i>
+                    </div>
+                    <h3 class="service-title">Wedding Makeup</h3>
+                    <p class="service-description">Bridal beauty services with professional makeup artistry for your special day</p>
+                    <div class="service-price">Starting at <span class="price">₹2,999+</span></div>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3 class="service-title">Corporate Grooming</h3>
+                    <p class="service-description">Professional grooming packages for business executives and corporate events</p>
+                    <div class="service-price">Starting at <span class="price">₹1,499+</span></div>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon">
+                        <i class="fas fa-hands-praying"></i>
+                    </div>
+                    <h3 class="service-title">Ritual & Traditional</h3>
+                    <p class="service-description">Traditional grooming rituals and ceremonial beauty services with authentic methods</p>
+                    <div class="service-price">Starting at <span class="price">₹3,499+</span></div>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-icon">
+                        <i class="fas fa-spa"></i>
+                    </div>
+                    <h3 class="service-title">Spa & Massage</h3>
+                    <p class="service-description">Relaxing spa treatments and therapeutic massages for complete wellness</p>
+                    <div class="service-price">Starting at <span class="price">₹1,999+</span></div>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="service-icon">
+                        <i class="fas fa-cut"></i>
+                    </div>
+                    <h3 class="service-title">Hair & Styling</h3>
+                    <p class="service-description">Expert hair cutting, coloring, and styling services for all hair types</p>
+                    <div class="service-price">Starting at <span class="price">₹999+</span></div>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="service-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3 class="service-title">Men's Premium Grooming</h3>
+                    <p class="service-description">Complete grooming packages including beard styling, facial treatments, and more</p>
+                    <div class="service-price">Starting at <span class="price">₹2,499+</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="booking">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Book Your Appointment</h2>
+                <p class="section-subtitle">Fill in the details below and we'll confirm your booking</p>
+            </div>
+            <div class="booking-wrapper">
+                <div class="booking-form-container" data-aos="fade-right">
+                    <form id="bookingForm" class="booking-form">
+                        <div class="form-group">
+                            <label for="name">
+                                <i class="fas fa-user"></i> Full Name *
+                            </label>
+                            <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">
+                                <i class="fas fa-phone"></i> Phone Number *
+                            </label>
+                            <input type="tel" id="phone" name="phone" required placeholder="10 digit mobile number" pattern="[0-9]{10}">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="service">
+                                <i class="fas fa-spa"></i> Select Service *
+                            </label>
+                            <select id="service" name="service" required>
+                                <option value="">Choose a service...</option>
+                                <option value="wedding-makeup">Wedding Makeup</option>
+                                <option value="corporate-grooming">Corporate Grooming</option>
+                                <option value="ritual-traditional">Ritual & Traditional Services</option>
+                                <option value="spa-massage">Spa & Massage</option>
+                                <option value="hair-styling">Hair & Styling</option>
+                                <option value="mens-grooming">Men's Premium Grooming</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="date">
+                                    <i class="fas fa-calendar"></i> Date *
+                                </label>
+                                <input type="date" id="date" name="date" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="time">
+                                    <i class="fas fa-clock"></i> Time *
+                                </label>
+                                <input type="time" id="time" name="time" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="location">
+                                <i class="fas fa-map-marker-alt"></i> Location (Optional)
+                            </label>
+                            <input type="text" id="location" name="location" placeholder="Home / Salon">
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            <i class="fas fa-check"></i> Confirm Booking
+                        </button>
+                    </form>
+                </div>
+                
+                <div class="booking-info" data-aos="fade-left">
+                    <div class="info-card">
+                        <i class="fas fa-clock"></i>
+                        <h3>Business Hours</h3>
+                        <p>Monday - Saturday: 10:00 AM - 8:00 PM</p>
+                        <p>Sunday: 11:00 AM - 6:00 PM</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Safe & Hygienic</h3>
+                        <p>We follow strict hygiene protocols for your safety and comfort</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-star"></i>
+                        <h3>Expert Stylists</h3>
+                        <p>Certified professionals with years of experience in luxury grooming</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Message Modal -->
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h2>Booking Confirmed!</h2>
+            <p>Thank you for your booking request. We'll contact you shortly to confirm your appointment.</p>
+            <button class="btn btn-primary" onclick="closeModal()">Done</button>
+        </div>
+    </div>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">What Our Clients Say</h2>
+                <p class="section-subtitle">Trusted by thousands of satisfied customers</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Absolutely amazing experience! The wedding makeup was perfect and lasted all day. The team is professional and so friendly. Highly recommended!"</p>
+                    <div class="testimonial-author">
+                        <strong>Priya Sharma</strong>
+                        <span>Bride</span>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Best salon in the city! The corporate grooming package helped me look my best for important meetings. The spa services are incredibly relaxing."</p>
+                    <div class="testimonial-author">
+                        <strong>Rahul Mehta</strong>
+                        <span>Business Executive</span>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"The traditional grooming service was exactly what I needed for my daughter's wedding ceremony. Authentic methods and beautiful results. Thank you!"</p>
+                    <div class="testimonial-author">
+                        <strong>Sunita Patel</strong>
+                        <span>Mother of the Bride</span>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Regular customer here! The hair styling team is fantastic and always understands exactly what I want. Premium service at great value!"</p>
+                    <div class="testimonial-author">
+                        <strong>Ananya Reddy</strong>
+                        <span>Regular Client</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">We'd love to hear from you. Visit us or reach out!</p>
+            </div>
+            <div class="contact-wrapper">
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Call Us</h3>
+                            <a href="tel:+919876543210">+91 98765 43210</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>WhatsApp</h3>
+                            <a href="https://wa.me/919876543210?text=Hi!%20I%20would%20like%20to%20know%20more%20about%20your%20services" target="_blank">Message Us on WhatsApp</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Follow Us</h3>
+                            <a href="https://instagram.com" target="_blank">@luxurysalonwellness</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Visit Us</h3>
+                            <p>123 Luxury Street,<br>Mumbai, Maharashtra 400001</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-map" data-aos="fade-left">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.703294939144!2d72.87765591525803!3d19.075983687112137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c9c676018b43%3A0x75f29c420fe8f3e!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0; border-radius: 15px;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-spa"></i>
+                        <span>Luxury Salon & Wellness</span>
+                    </div>
+                    <p>Premium grooming services with a touch of luxury. Making you look and feel your best, every day.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#booking">Book Appointment</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Business Hours</h3>
+                    <ul>
+                        <li>Monday - Saturday: 10:00 AM - 8:00 PM</li>
+                        <li>Sunday: 11:00 AM - 6:00 PM</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <div class="social-links">
+                        <a href="https://wa.me/919876543210" target="_blank" aria-label="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="tel:+919876543210" aria-label="Call">
+                            <i class="fas fa-phone"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Luxury Salon & Wellness. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Action Buttons -->
+    <div class="floating-buttons">
+        <a href="https://wa.me/919876543210?text=Hi!%20I%20would%20like%20to%20book%20an%20appointment" 
+           class="float-btn float-whatsapp" 
+           target="_blank" 
+           aria-label="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="tel:+919876543210" 
+           class="float-btn float-call" 
+           aria-label="Call">
+            <i class="fas fa-phone"></i>
+        </a>
+    </div>
+
+    <!-- AOS Animation Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
+
